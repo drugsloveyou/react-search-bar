@@ -1,0 +1,84 @@
+.search-container {
+  position        : relative;
+  margin          : 64px 20px 0;
+  transition      : all cubic-bezier(0.56, 0.23, 0.44, 0.91) 500ms;
+  padding-top     : 45px;
+}
+
+.search-container.focus {
+  margin-top : 0;
+  padding-top: 0;
+}
+
+.search-container.focus .search-title {
+  transform: translateY(-60px);
+}
+
+.search-title {
+  position   : absolute;
+  top        : 0;
+  display    : block;
+  font-size  : 38px;
+  height     : 45px;
+  line-height: 45px;
+  font-weight: bold;
+  transition : all ease-in-out 300ms;
+}
+
+.search-bar {
+  position        : relative;
+  display         : flex;
+  height          : 42px;
+  margin-top      : 15px;
+  border-radius   : 8px;
+  overflow        : hidden;
+  background-color: #ededed;
+  flex-direction  : row;
+  align-items     : center;
+}
+
+.search-icon {
+  position   : absolute;
+  left       : 10px;
+  width      : 20px;
+  height     : 20px;
+  line-height: 20px;
+  color      : #a9a9a9;
+  transition : transform ease-in-out 300ms;
+  text-align : center;
+}
+
+.search-close {
+  position       : absolute;
+  right          : 10px;
+  display        : flex;
+  width          : 30px;
+  height         : 30px;
+  align-items    : center;
+  justify-content: flex-end;
+  color          : #a9a9a9;
+}
+
+.search-input {
+  flex            : 1;
+  display         : block;
+  height          : 42px;
+  font-size       : 18px;
+  padding         : 0 10px 0 35px;
+  border          : none;
+  outline         : none;
+  background-color: transparent;
+  color           : #a9a9a9;
+  box-sizing      : border-box;
+  transition      : all ease-in-out 300ms;
+}
+
+.search-input:focus {
+  background-color: #333;
+  padding-left    : 10px;
+  color           : #ffffff;
+}
+
+.search-input:focus+.search-icon {
+  transform: translateX(-30px);
+}

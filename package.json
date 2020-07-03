@@ -6,16 +6,26 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/classnames": "^2.2.10",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "classnames": "^2.2.6",
+    "font-awesome": "^4.7.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-fontawesome": "^1.7.1",
+    "react-redux": "^7.2.0",
     "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-actions": "^2.6.5",
+    "redux-promise": "^0.6.0",
     "typescript": "~3.7.2"
   },
   "scripts": {
+    "eslint": "./node_modules/eslint/bin/eslint.js --ext .tsx,.ts,.js,.jsx --cache --quiet src",
+    "eslint-fix": "./node_modules/eslint/bin/eslint.js --ext .tsx,.ts,.js,.jsx --fix --cache --quiet src",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -35,5 +45,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@types/react-fontawesome": "^1.6.4",
+    "@types/react-redux": "^7.1.9",
+    "@types/redux": "^3.6.0",
+    "@types/redux-actions": "^2.6.1",
+    "@types/redux-promise": "^0.5.29"
   }
 }

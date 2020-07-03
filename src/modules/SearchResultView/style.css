@@ -1,0 +1,59 @@
+.search-result-view {
+  margin: 10px 0 0;
+}
+
+.search-section {
+  background-color: #fafafa;
+}
+
+.search-section-title {
+  height     : 42px;
+  line-height: 42px;
+  font-size  : 19px;
+  color      : #a9a9a9;
+  margin     : 0 20px 0;
+}
+
+.search-section-item {
+  display         : flex;
+  flex-direction  : row;
+  align-items     : center;
+  background-color: #ffffff;
+  border-bottom   : 1px solid #fafafa;
+  box-sizing      : border-box;
+  padding         : 15px 20px;
+}
+
+.search-section-item div div {
+  font-size    : 18px;
+  font-weight  : bold;
+  margin-bottom: 8px;
+}
+
+.search-section-item div span {
+  color    : #a9a9a9;
+  font-size: 16px;
+}
+
+.search-item-left {
+  flex: 1;
+}
+
+.search-price.no-stock {
+  background-color: #f6f6f6;
+  color           : #a9a9a9;
+}
+
+.search-price {
+  padding      : 0 15px;
+  height       : 26px;
+  line-height  : 25px;
+  background   : #f5f7fd;
+  border-radius: 6px;
+  font-size    : 15px;
+  color        : rgb(113, 144, 236);
+  font-weight  : 500;
+  min-width    : 83px;
+  text-align   : center;
+  box-sizing   : border-box;
+}
