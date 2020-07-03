@@ -7,8 +7,8 @@ class SearcgResultView extends PureComponent<any> {
   render() {
     return (
       <div className='search-result-view'>
-        {this.props.results.map((data: any) => (
-          <SearchResultSection data={data} key={data.id} />
+        {this.props.results.map((data: any, index: number) => (
+          <SearchResultSection data={data} key={index} />
         ))}
       </div>
     );

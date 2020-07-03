@@ -1,8 +1,8 @@
 .search-container {
-  position        : relative;
-  margin          : 64px 20px 0;
-  transition      : all cubic-bezier(0.56, 0.23, 0.44, 0.91) 500ms;
-  padding-top     : 45px;
+  position   : relative;
+  margin     : 64px 20px 0;
+  transition : all cubic-bezier(0.56, 0.23, 0.44, 0.91) 500ms;
+  padding-top: 45px;
 }
 
 .search-container.focus {
@@ -81,4 +81,25 @@
 
 .search-input:focus+.search-icon {
   transform: translateX(-30px);
+}
+
+.go-to-top {
+  position        : fixed;
+  right           : 20px;
+  bottom          : 50px;
+  display         : block;
+  width           : 50px;
+  height          : 50px;
+  line-height     : 50px;
+  font-size       : 16px;
+  border-radius   : 50px;
+  background-color: #222;
+  color           : #fff;
+  transform       : rotateZ(-45deg);
+  text-align      : center;
+  transition      : opacity ease-in-out 500ms;
+}
+
+.go-to-top:active {
+  opacity: 0.5;
 }

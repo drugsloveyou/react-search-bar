@@ -39,35 +39,46 @@ class SearchBar extends PureComponent<any> {
     this.props.SearchListByNameAction('');
   };
 
+  scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   render() {
     const { focus, search } = this.state;
 
     return (
-      <div
-        className={classnames('search-container', {
-          focus,
-        })}
-      >
-        <span className='search-title'>Search</span>
-        <div className='search-bar'>
-          <input
-            className='search-input'
-            placeholder='Tap here to search'
-            value={search}
-            onFocus={this.onFocus}
-            onBlur={this.onBlur}
-            onChange={this.onChange}
-          />
-          <FontAwesome name='search' className='search-icon' />
-          {search ? (
-            <FontAwesome
-              name='close'
-              className='search-close'
-              onClick={this.close}
+      <>
+        <div
+          className={classnames('search-container', {
+            focus,
+          })}
+        >
+          <span className='search-title'>Search</span>
+          <div className='search-bar'>
+            <input
+              className='search-input'
+              placeholder='Tap here to search'
+              value={search}
+              onFocus={this.onFocus}
+              onBlur={this.onBlur}
+              onChange={this.onChange}
             />
-          ) : null}
+            <FontAwesome name='search' className='search-icon' />
+            {search ? (
+              <FontAwesome
+                name='close'
+                className='search-close'
+                onClick={this.close}
+              />
+            ) : null}
+          </div>
         </div>
-      </div>
+        <FontAwesome
+          name='rocket'
+          className='go-to-top'
+          onClick={this.scrollToTop}
+        />
+      </>
     );
   }
 }

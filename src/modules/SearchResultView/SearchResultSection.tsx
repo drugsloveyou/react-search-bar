@@ -8,8 +8,8 @@ export default class SearchResultSection extends PureComponent<any> {
     return (
       <div className='search-section'>
         <div className='search-section-title'>{data.type}</div>
-        {this.props.data.items.map((item: any) => (
-          <SearchResultSectionItem data={item} key={item.id} />
+        {this.props.data.items.map((item: any, index: number) => (
+          <SearchResultSectionItem data={item} key={index} />
         ))}
       </div>
     );
